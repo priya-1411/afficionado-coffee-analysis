@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title="Coffee Dashboard", layout="wide")
 
 # Load Data
-df = pd.read_csv(r"D:\Afficionado-Coffee-Analysis\Afficionado Coffee Roasters.xlsx - Transactions.csv")
+df = pd.read_csv("Transactions.csv")
 
 # Revenue Column
 df["Revenue"] = df["transaction_qty"] * df["unit_price"]
